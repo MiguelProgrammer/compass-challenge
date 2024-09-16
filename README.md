@@ -68,7 +68,7 @@ O sistema deve retornar uma resposta com status code 200 em caso de sucesso e 4X
 
 ## Pontos a serem avaliados
 - Qualidade do código - CLEAN CODE
-- Testes unitários - RESULTADO NÃO PUDE ATENDER OS TESTES, PELO TEMPO, MAS INICIEI
-- Arquitetura - ADOTEI A ARQUITETURA LIMPA PARA ESTA SOLUAÇÃO
-- Abstração - REALIZEI PEQUENAS ALTERAÇÕES E ADICIONEIS OUTROS ATRIBUTOS
+- Testes unitários - RESULTADO NÃO PUDE ATENDER TODOS OS TESTES, PELO TEMPO, MAS INICIEI
+- Arquitetura - ADOTEI A ARQUITETURA LIMPA PARA ESTA SOLUÇÃO
+- Abstração - REALIZEI PEQUENAS ALTERAÇÕES E ADICIONEI OUTROS ATRIBUTOS
 

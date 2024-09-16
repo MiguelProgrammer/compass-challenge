@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group = 'br.com.desafio'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    compileOnly "org.projectlombok:lombok:1.18.28"
+    annotationProcessor "org.projectlombok:lombok:1.18.28"
+    implementation "org.projectlombok:lombok:1.18.28"
+
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.1'
+    implementation group: 'com.h2database', name: 'h2', version: '2.2.220'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '3.3.3'
+    implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-starter', version: '3.2.0-M1'
+    implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-sqs', version: '3.2.0-M1'
+    implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-autoconfigure', version: '3.2.0-M1'
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.3.3'
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.0'// https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.13.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,31 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.0-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'desafio.com'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-starter', version: '3.2.0-M1'
+	implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-sqs', version: '3.2.0-M1'
+	implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-autoconfigure', version: '3.2.0-M1'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
